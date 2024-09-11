@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce - Galeria</title>
+    <title>Ecommerce - Contacto</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,72 +46,75 @@
 
 
     <main class="container-xl py-5">
-        <h2 class="text-center my-5">Galeria</h2>
-        
-            <ul class="row list-unstyled galeria">
-                <li class="col-md-6 col-lg-4">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_01">
-                    <img src="img/galeria_01.jpg" class="img-fluid" alt="imagen galeria">
-                </a>
-                </li>
-              
-                <li class="col-md-6 col-lg-4">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_02">
-                        <img src="img/galeria_02.jpg" class="img-fluid" alt="imagen galeria">
-                    </a>
-                </li>
+        <h2 class="text-center my-5">Contacto</h2>
 
-                <li class="col-md-6 col-lg-4">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_03">
-                        <img src="img/galeria_03.jpg" class="img-fluid" alt="imagen galeria">
-                    </a>
-                </li>
+        <div class="row justify-content-center">
+            <form class="col-md-8 needs-validation" novalidate>
+                <fieldset>
+                    <legend class="bg-primary text-center text-white fs-2 fw-bold">Tus datos</legend>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+                        <span class="invalid-feedback">Hubo un error</span>
+                    </div>
 
-                <li class="col-md-6 col-lg-4">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_04">
-                        <img src="img/galeria_04.jpg" class="img-fluid" alt="imagen galeria">
-                    </a>
-                </li>
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto:</label>
+                        <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                        <span class="valid-feedback">Correcto</span>
+                    </div>
 
-                <li class="col-md-6 col-lg-4">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_05">
-                        <img src="img/galeria_05.jpg" class="img-fluid" alt="imagen galeria">
-                    </a>
-                </li>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electronico">
+                    </div>
 
-                <li class="col-md-6 col-lg-4">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_06">
-                        <img src="img/galeria_06.jpg" class="img-fluid" alt="imagen galeria">
-                    </a>
-                </li>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Telefono:</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Escribe tu numero telefonico">
+                    </div>
 
-                <li class="col-md-6 col-lg-4">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_07">
-                        <img src="img/galeria_07.jpg" class="img-fluid" alt="imagen galeria">
-                    </a>
-                </li>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea name="" id="mensaje" class="form-control" rows="10"></textarea>
+                    </div>
+                </fieldset>
 
-                <li class="col-md-6 col-lg-4">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_08">
-                        <img src="img/galeria_08.jpg" class="img-fluid" alt="imagen galeria">
-                    </a>
-                </li>
+                <fieldset>
+                    <legend class="bg-primary text-center text-white fs-2 fw-bold">Pais</legend>
+                    <div class="mb-3">
+                        <label for="pais" class="form-label">Pais:</label>
+                        <select name="" id="pais" class="form-control">
+                            <option value="">-----Seleccione----</option>
+                            <option value="PR">Peru</option>
+                            <option value="MX">Mexico</option>
+                            <option value="BR">Brasil</option>
+                            <option value="AR">Argentina</option>
+                            <option value="COL">Colombia</option>
+                        </select>
+                    </div>
+                </fieldset>
 
-                <li class="col-md-6 col-lg-4">
-                    <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_09">
-                        <img src="img/galeria_09.jpg" class="img-fluid" alt="imagen galeria">
-                    </a>
-                </li>
-            </ul>
-    </main>
+                <fieldset>
+                    <legend class="bg-primary text-center text-white fs-2 fw-bold">Informacion extra</legend>
+                    <div class="mb-3">
+                        <label for="cliente" class="form-label">Cliente:</label>
+                        <input name="tipo" type="radio" class="form-check-input" id="cliente" >
+                    </div>
 
-    <div class="modal fade" id="modal-imagen">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body"></div>
+                    <div class="mb-3">
+                        <label for="proveedor" class="form-label">Proveedor:</label>
+                        <input name="tipo" type="radio" class="form-check-input" id="proveedor">
+                    </div>
+                </fieldset>
+
+                <div class="d-grid d-md-flex">
+                <input type="submit" class="btn btn-success mt-5 fs-2 px-5" value="Enviar formulario">
             </div>
+            </form>
         </div>
-    </div>
+        
+    </main>
 
     <footer class="pt-5 mt-5 border-top">
         <div class="container-xl mt-5">
@@ -124,7 +127,7 @@
                         <a class="text-dark text-decoration-none" href="#">Jardin</a>
                         <a class="text-dark text-decoration-none" href="#">Cochera</a>
                         <a class="text-dark text-decoration-none" href="#">Dormitorios</a>
-
+                        
                     </nav>
                 </div>
 
@@ -136,7 +139,7 @@
                         <a class="text-dark text-decoration-none" href="#">Carreras</a>
                         <a class="text-dark text-decoration-none" href="#">Politica de privacidad</a>
                         <a class="text-dark text-decoration-none" href="#">Términos</a>
-
+                        
                     </nav>
                 </div>
 
@@ -145,7 +148,7 @@
                     <nav class="d-flex flex-column">
                         <a class="text-dark text-decoration-none" href="#">Preguntas frecuentes</a>
                         <a class="text-dark text-decoration-none" href="#">Ayuda en línea</a>
-                        <a class="text-dark text-decoration-none" href="#">Confianza y seguridad</a>
+                        <a class="text-dark text-decoration-none" href="#">Confianza y seguridad</a>                      
                     </nav>
                 </div>
             </div>
